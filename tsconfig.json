@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "typeRoots": [
+      "node_modules/@types",
+      "src/types"
+    ],
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "suppressImplicitAnyIndexErrors":true,
+    "lib": ["esnext", "dom"],
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "paths":{
+      "@": ["src"],
+      "@/*": ["src/*"],
+      "c@": ["src/components"],
+      "c@/*": ["src/components/*"],
+      "a@": ["src/apis"],
+      "a@/*": ["src/apis/*"],
+      "v@": ["src/views"],
+      "v@/*": ["src/views/*"],
+      "u@": ["src/utils"],
+      "u@/*": ["src/utils/*"],
+      "s@": ["src/styles"],
+      "s@/*": ["src/styles/*"],
+      "r@": ["src/router"],
+      "r@/*": ["src/router/*"],
+      "x@": ["src/store"],
+      "x@/*": ["src/store/*"],
+      "t@": ["src/types"],
+      "t@/*": ["src/types/*"],
+      "h@": ["src/hooks"],
+      "h@/*": ["src/hooks/*"],
+    }
+  },
+  "include": [
+    "src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"
+  ],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
