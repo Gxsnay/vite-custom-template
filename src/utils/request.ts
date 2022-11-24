@@ -2,6 +2,7 @@ import axios, { AxiosResponse, AxiosRequestConfig } from "axios";
 import { message } from 'ant-design-vue';
 
 const service = axios.create({
+  // baseURL: import.meta.env.VITE_APP_MOCK_BASE_API,
   baseURL: "/api/"
 });
 
